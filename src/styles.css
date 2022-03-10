@@ -1,0 +1,203 @@
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+section {
+	background-color : white;
+}
+
+.sub-section {
+	display : flex;
+	justify-content : space-around;
+	padding : 50px;
+}
+
+.sub-section-alternative {
+	display : flex;
+	flex-direction : column;
+	text-align : center;
+	padding : 50px;
+}
+
+.intro {
+	height : 100vh;
+	background-color : #1c1d25;
+	color : white;
+	font-size : 40px;
+}
+
+.intro-text {
+	margin-left : 40px;
+	margin-bottom : 200px;
+}
+
+.intro-body {
+	display : flex;
+	justify-content : space-between;
+	height : 100%;
+	align-items : center;
+}
+
+footer {
+	background-color : black;
+	color : white;
+	text-align : center;
+	padding : 80px;
+}
+
+nav {
+	display : flex;
+	justify-content : space-between;
+}
+
+ul {
+	display : flex;
+	list-style-type : none;
+	width : 500px;
+	justify-content : space-around;
+	font-size : 25px;
+}
+
+li {
+	text-decoration : none;
+}
+
+h1 {
+	font-size : 90px;
+	margin : 0;
+}
+
+h2 {
+	font-size : 50px;
+	margin : 0;
+}
+
+p {
+	margin : 0;
+	font-weight : 300;
+	font-size : 30px;
+}
+
+.subtext {
+	font-size : 15px;
+	font-weight : 300;
+}
+
+.button {
+	height : 55px;
+	width : 180px;
+	padding-top : 5px;
+	background-color : coral;
+	border-radius : 30px;
+	text-align : center;
+	font-size : 30px;
+	margin-top : 20px;
+}
+
+.button:hover {
+	background-color : #cd5b45;
+}
+
+.button:active {
+	background-color : darkgrey;
+	color : #808080;
+}
+
+.hamburger {
+	display : none;
+}
+
+a {
+	text-decoration : none;
+	color : white;
+}
+
+.intro-social {
+	padding-bottom : 200px;
+}
+
+.intro-logo {
+	height : 80px;
+	margin : 25px;
+}
+
+.social {
+	margin : 30px;
+}
+
+.pic {
+	width : 340px;
+	border-radius : 170px;
+}
+
+.passport_pic {
+	display : flex;
+	align-items : center;
+}
+
+.certi-card {
+	height : 500px;
+	width : 300px;
+	box-shadow : 5px 5px 20px grey;
+	margin : 10px;
+}
+
+.certi-container {
+	display : flex;
+	justify-content : space-around;
+}
+
+.certi-image {
+	margin-top : 25px;
+	width : 250px;
+	border-radius : 125px;
+}
+
+hr {
+	margin-left : 20px;
+	margin-right : 20px;
+}
+
+.certi-link {
+	text-decoration : none;
+	color : #cd5b45;
+}
+
+@media only screen and (max-width : 1070px){
+	.certi-container {
+		display : flex;
+		flex-wrap : wrap;
+	}
+}
+
+@media only screen and (max-width : 1000px){
+	.hamburger {
+		display : block;
+		border : 0;
+		background-color : transparent;
+		color : white;
+		font-size : 30px;
+		margin : 20px;
+		align-self : flex-end;
+	}
+	
+	ul {
+		display : none;
+		background-color : #2b2c38;
+		margin : 0;
+	}
+	
+	ul.show {
+		display : block;
+	}
+	
+	nav {
+		display : flex;
+		flex-direction : column-reverse;
+		background-color : #2b2c38;
+	}
+	
+	.intro-logo {
+		display : none;
+	}
+}
